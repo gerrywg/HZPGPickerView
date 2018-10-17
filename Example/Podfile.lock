@@ -1,0 +1,16 @@
+PODS:
+  - HZPGPickerView (0.1.0)
+
+DEPENDENCIES:
+  - HZPGPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  HZPGPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZPGPickerView: cadfc823f67cca015c384c86b34bf54cf334c51a
+
+PODFILE CHECKSUM: 9e9752ae78b45d1bcc5b0357d90dba9de2cb3d51
+
+COCOAPODS: 1.5.0
