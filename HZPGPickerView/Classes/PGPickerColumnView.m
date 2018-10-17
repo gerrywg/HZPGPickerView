@@ -278,6 +278,16 @@ static NSString *const cellReuseIdentifier = @"PGPickerColumnCell";
         attriString = self.datas[index];
         self.textOfSelectedRow = attriString.string;
     }
+    
+    //refresh default selection add by WANGGANG 27-09-2018
+    if (self.isSelectFirstRowAfterReload) {
+        __weak typeof (self)weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (weakSelf.datas.count) {
+                [weakSelf selectRow:0 animated:NO];
+            }
+        });
+    }
 }
 
 #pragma mark - UITableViewDelegate

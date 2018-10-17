@@ -71,6 +71,7 @@
     self.textColorOfOtherRow = [UIColor lightGrayColor];
     self.isHiddenMiddleText = true;
     self.isHiddenWheels = true;
+    self.isSelectFirstRowAfterReload = true;
     self.lineHeight = 0.5;
     self.verticalLineWidth = 0.5;
     self.verticalLineBackgroundColor = self.lineBackgroundColor;
@@ -135,6 +136,7 @@
     NSMutableArray *columnViewList = [NSMutableArray arrayWithCapacity:_numberOfComponents];
     for (int i = 0; i < _numberOfComponents; i++) {
         PGPickerColumnView *view = [self createColumnViewAtComponent:i refresh:false];
+        view.isSelectFirstRowAfterReload = self.isSelectFirstRowAfterReload;
         [columnViewList addObject:view];
     }
     self.columnViewList = columnViewList;

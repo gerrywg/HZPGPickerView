@@ -43,6 +43,7 @@ typedef NS_ENUM(NSUInteger, PGPickerViewType) {
 
 @property(nonatomic, assign) BOOL isHiddenWheels; // default is true  true -> hidden
 
+@property (assign, nonatomic) BOOL isSelectFirstRowAfterReload; //default is true ->selectFistRow
 
 - (NSInteger)numberOfRowsInComponent:(NSInteger)component;
 

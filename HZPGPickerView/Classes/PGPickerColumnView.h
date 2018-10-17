@@ -26,6 +26,7 @@
 @property(nonatomic, strong) UIFont *textFontOfOtherRow;
 
 @property(nonatomic, assign) BOOL isHiddenWheels;
+@property(nonatomic, assign) BOOL isSelectFirstRowAfterReload; //default is true ->selectFistRow
 
 - (instancetype)initWithFrame:(CGRect)frame rowHeight:(CGFloat)rowHeight upLineHeight:(CGFloat)upLineHeight downLineHeight:(CGFloat)downLineHeight;
 - (void)selectRow:(NSInteger)row animated:(BOOL)animated;
