@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HZPGPickerView'
-  s.version          = '1.1.5'
+  s.version          = '1.3.5'
   s.summary          = 'HZPGPickerView is a custom View for HZPGPickerView.'
 
 # This description is used to generate tags and improve search results.
